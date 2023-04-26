@@ -11,6 +11,11 @@
 // git config --global.init default branch main (sets default branch to main)
 // git config --global user.name/email
 // git add. (tracks all files)
+// git rm --cached  <filename> (untracks a file)
+// git commit -m "<comment>"
+// git diff (differences from last commit)
+// git restore --staged <filename>
+// git commit -a -m "<comment>" (Bypass the staging environment and commit changes)
 
 const _ = require("lodash")
 
@@ -18,3 +23,4 @@ const items = [1, [2, [3, [4]]]]
 const newItems = _.flattenDeep(items);
 
 console.log(newItems);
+console.log("New message");
